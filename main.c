@@ -1,7 +1,10 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 int main() {
-    printf("123");
+    bool a = true;
+
+    printf("%d", !a);
 
     return 0;
 }
