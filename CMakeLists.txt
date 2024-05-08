@@ -7,4 +7,6 @@ add_executable(code main.c
         data_structures/matrix/matrix.c
         data_structures/matrix/matrix.h
         algorithms/task/1_fill_matrix.h
-        algorithms/task/2_game_life.h)
+        algorithms/task/2_game_life.h
+        algorithms/task/3_median_filter.h
+        data_structures/vector/vector.c)
