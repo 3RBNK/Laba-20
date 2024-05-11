@@ -98,7 +98,8 @@
 				4,
 				5,
 				7,
-				8
+				8,
+				9
 			]
 		}
 	],
@@ -150,6 +151,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "algorithms/task/6_generate_nums.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "algorithms/task/8_rearrange_string.h",
 			"sourceGroupIndex" : 1
 		}
 	],

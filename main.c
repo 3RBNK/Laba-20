@@ -1,11 +1,19 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-#include "algorithms/task/6_generate_nums.h"
+#include "algorithms/task/8_rearrange_string.h"
 
 
 int main() {
-    generate_nums("/home/lenovo/Документы/prjct/clion/Laba-20/file_for_task/task_6/task_6.txt");
+    char s[] = "abc";
+    char res[100] = "";
+
+    int num[] = {0, 1, 2};
+    int n = 3;
+
+    rearrange_string(s, res, num, n);
+
+    puts(res);
 
     return 0;
 }

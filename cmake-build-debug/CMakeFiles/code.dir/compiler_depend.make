@@ -97,13 +97,11 @@ CMakeFiles/code.dir/data_structures/vector/vector.c.o: /home/lenovo/Докуме
   /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include/stddef.h
 
 CMakeFiles/code.dir/main.c.o: /home/lenovo/Документы/prjct/clion/Laba-20/main.c \
-  /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/6_generate_nums.h \
+  /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/8_rearrange_string.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -116,10 +114,8 @@ CMakeFiles/code.dir/main.c.o: /home/lenovo/Документы/prjct/clion/Laba-2
   /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -130,6 +126,8 @@ CMakeFiles/code.dir/main.c.o: /home/lenovo/Документы/prjct/clion/Laba-2
   /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include/stdbool.h \
   /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include/stddef.h
 
+
+/home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/8_rearrange_string.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
@@ -260,7 +258,5 @@ CMakeFiles/code.dir/main.c.o: /home/lenovo/Документы/prjct/clion/Laba-2
 /usr/include/endian.h:
 
 /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include/stdbool.h:
-
-/home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/6_generate_nums.h:
 
 /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include/stddef.h:

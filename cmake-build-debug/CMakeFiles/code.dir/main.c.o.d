@@ -25,8 +25,4 @@ CMakeFiles/code.dir/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
  /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include/stdbool.h \
- /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/6_generate_nums.h \
- /usr/include/string.h \
- /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/strings.h
+ /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/8_rearrange_string.h

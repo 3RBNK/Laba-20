@@ -11,4 +11,6 @@ add_executable(code main.c
         algorithms/task/3_median_filter.h
         data_structures/vector/vector.c
         "algorithms/task/5_get_submatrix.h"
-        algorithms/task/6_generate_nums.h)
+        algorithms/task/6_generate_nums.h
+        algorithms/task/8_rearrange_string.h
+)
