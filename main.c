@@ -1,19 +1,37 @@
 #include <stdio.h>
-#include <stdbool.h>
+#include <stdlib.h>
+#include <signal.h>
 
-#include "algorithms/task/8_rearrange_string.h"
+FILE *file;
+int N;
+
+void handle_sigint(int sig) {
+    char line[256];
+    for (int i = 0; i < N; i++)
+        if(fgets(line, sizeof(line), file))
+            printf("%s", line);
+        else
+            exit(0);
+}
 
 
-int main() {
-    char s[] = "abc";
-    char res[100] = "";
+int main(int argc, char *argv[]) {
+    if(argc != 3) {
+        printf("Usage: %s <filename> <N>\n", argv[0]);
+        return 1;
+    }
 
-    int num[] = {0, 1, 2};
-    int n = 3;
+    file = fopen(argv[1], "r");
+    if(file == NULL) {
+        perror("Error opening file");
+        return 1;
+    }
 
-    rearrange_string(s, res, num, n);
+    N = atoi(argv[2]);
 
-    puts(res);
+    signal(SIGINT, handle_sigint);
+
+    getchar();
 
     return 0;
 }

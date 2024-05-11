@@ -94,6 +94,9 @@
 		<Unit filename="/home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/8_rearrange_string.h">
 			<Option target="code"/>
 		</Unit>
+		<Unit filename="/home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/9_filter_nums.h">
+			<Option target="code"/>
+		</Unit>
 		<Unit filename="/home/lenovo/Документы/prjct/clion/Laba-20/data_structures/matrix/matrix.c">
 			<Option target="code"/>
 		</Unit>
