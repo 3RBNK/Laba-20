@@ -96,7 +96,8 @@
 				2,
 				3,
 				4,
-				5
+				5,
+				7
 			]
 		}
 	],
@@ -139,6 +140,11 @@
 			"compileGroupIndex" : 0,
 			"path" : "data_structures/vector/vector.c",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "algorithms/task/5_get_submatrix.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-int main() {
-    bool a = true;
+#include "algorithms/task/5_get_submatrix.h"
 
-    printf("%d", !a);
+
+int main() {
 
     return 0;
 }

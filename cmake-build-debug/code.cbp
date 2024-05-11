@@ -85,6 +85,9 @@
 		<Unit filename="/home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/3_median_filter.h">
 			<Option target="code"/>
 		</Unit>
+		<Unit filename="/home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/5_get_submatrix.h">
+			<Option target="code"/>
+		</Unit>
 		<Unit filename="/home/lenovo/Документы/prjct/clion/Laba-20/data_structures/matrix/matrix.c">
 			<Option target="code"/>
 		</Unit>
@@ -92,6 +95,9 @@
 			<Option target="code"/>
 		</Unit>
 		<Unit filename="/home/lenovo/Документы/prjct/clion/Laba-20/data_structures/vector/vector.c">
+			<Option target="code"/>
+		</Unit>
+		<Unit filename="/home/lenovo/Документы/prjct/clion/Laba-20/data_structures/vector/vector.h">
 			<Option target="code"/>
 		</Unit>
 		<Unit filename="/home/lenovo/Документы/prjct/clion/Laba-20/main.c">

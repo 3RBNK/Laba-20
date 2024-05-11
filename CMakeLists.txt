@@ -9,4 +9,5 @@ add_executable(code main.c
         algorithms/task/1_fill_matrix.h
         algorithms/task/2_game_life.h
         algorithms/task/3_median_filter.h
-        data_structures/vector/vector.c)
+        data_structures/vector/vector.c
+        "algorithms/task/5_get_submatrix.h")
