@@ -2,36 +2,21 @@
 #include <stdlib.h>
 #include <signal.h>
 
-FILE *file;
-int N;
-
-void handle_sigint(int sig) {
-    char line[256];
-    for (int i = 0; i < N; i++)
-        if(fgets(line, sizeof(line), file))
-            printf("%s", line);
-        else
-            exit(0);
-}
+#include "algorithms/task/7_binary_tree.h"
 
 
-int main(int argc, char *argv[]) {
-    if(argc != 3) {
-        printf("Usage: %s <filename> <N>\n", argv[0]);
-        return 1;
-    }
+int main() {
+    vector nums = createVector(30);
 
-    file = fopen(argv[1], "r");
-    if(file == NULL) {
-        perror("Error opening file");
-        return 1;
-    }
+    int num[] = {3, 2, 1, 6, 0, 5};
+    int n = 6;
 
-    N = atoi(argv[2]);
+    for (int i = 0; i < n; i++)
+        pushBack(&nums, num[i]);
 
-    signal(SIGINT, handle_sigint);
+    vector result = generate_tree(&nums);
 
-    getchar();
+    print_vector(&result);
 
     return 0;
 }

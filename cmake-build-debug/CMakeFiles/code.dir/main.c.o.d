@@ -48,9 +48,7 @@ CMakeFiles/code.dir/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include/stdbool.h \
- /usr/include/signal.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
  /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
@@ -71,6 +69,7 @@ CMakeFiles/code.dir/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
- /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/9_filter_nums.h \
+ /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/7_binary_tree.h \
  /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/../../data_structures/vector/vector.h \
- /usr/include/malloc.h
+ /usr/include/malloc.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include/stdbool.h

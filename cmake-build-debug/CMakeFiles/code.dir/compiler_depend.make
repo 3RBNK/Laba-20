@@ -97,12 +97,19 @@ CMakeFiles/code.dir/data_structures/vector/vector.c.o: /home/lenovo/Докуме
   /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include/stddef.h
 
 CMakeFiles/code.dir/main.c.o: /home/lenovo/Документы/prjct/clion/Laba-20/main.c \
+  /home/lenovo/Документы/prjct/clion/Laba-20/data_structures/vector/vector.h \
+  /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/7_binary_tree.h \
+  /usr/include/alloca.h \
+  /usr/include/endian.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
+  /usr/include/malloc.h \
   /usr/include/signal.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
+  /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
   /usr/include/x86_64-linux-gnu/bits/endian.h \
   /usr/include/x86_64-linux-gnu/bits/endianness.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
@@ -111,6 +118,7 @@ CMakeFiles/code.dir/main.c.o: /home/lenovo/Документы/prjct/clion/Laba-2
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/sigaction.h \
   /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
   /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
@@ -123,7 +131,9 @@ CMakeFiles/code.dir/main.c.o: /home/lenovo/Документы/prjct/clion/Laba-2
   /usr/include/x86_64-linux-gnu/bits/sigstksz.h \
   /usr/include/x86_64-linux-gnu/bits/sigthread.h \
   /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
@@ -137,6 +147,8 @@ CMakeFiles/code.dir/main.c.o: /home/lenovo/Документы/prjct/clion/Laba-2
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
@@ -147,12 +159,19 @@ CMakeFiles/code.dir/main.c.o: /home/lenovo/Документы/prjct/clion/Laba-2
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/include/x86_64-linux-gnu/sys/ucontext.h \
   /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include/stdarg.h \
   /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include/stdbool.h \
@@ -168,6 +187,8 @@ CMakeFiles/code.dir/main.c.o: /home/lenovo/Документы/prjct/clion/Laba-2
 /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigthread.h:
 
 /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include/stdbool.h:
 
@@ -315,6 +336,8 @@ CMakeFiles/code.dir/main.c.o: /home/lenovo/Документы/prjct/clion/Laba-2
 
 /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
 
+/home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/7_binary_tree.h:
+
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
 /usr/include/signal.h:
@@ -330,5 +353,3 @@ CMakeFiles/code.dir/main.c.o: /home/lenovo/Документы/prjct/clion/Laba-2
 /usr/include/x86_64-linux-gnu/bits/signal_ext.h:
 
 /usr/include/x86_64-linux-gnu/bits/sigstksz.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigthread.h:

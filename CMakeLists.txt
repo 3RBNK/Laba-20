@@ -14,4 +14,5 @@ add_executable(code main.c
         algorithms/task/6_generate_nums.h
         algorithms/task/8_rearrange_string.h
         algorithms/task/9_filter_nums.h
+        algorithms/task/7_binary_tree.h
 )

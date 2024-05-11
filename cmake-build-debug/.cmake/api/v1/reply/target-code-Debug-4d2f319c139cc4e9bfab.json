@@ -100,7 +100,8 @@
 				7,
 				8,
 				9,
-				10
+				10,
+				11
 			]
 		}
 	],
@@ -162,6 +163,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "algorithms/task/9_filter_nums.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "algorithms/task/7_binary_tree.h",
 			"sourceGroupIndex" : 1
 		}
 	],
