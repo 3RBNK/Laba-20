@@ -69,7 +69,11 @@ CMakeFiles/code.dir/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
- /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/7_binary_tree.h \
- /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/../../data_structures/vector/vector.h \
- /usr/include/malloc.h \
- /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include/stdbool.h
+ /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/4_get_domains.h \
+ /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/../../data_structures/string/string_.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include/stdbool.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include/stdint.h \
+ /usr/include/stdint.h /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h /usr/include/ctype.h \
+ /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h

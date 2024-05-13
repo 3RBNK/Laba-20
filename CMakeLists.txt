@@ -15,4 +15,7 @@ add_executable(code main.c
         algorithms/task/8_rearrange_string.h
         algorithms/task/9_filter_nums.h
         algorithms/task/7_binary_tree.h
+        algorithms/task/4_get_domains.h
+        data_structures/string/string_.h
+        data_structures/string/string_.c
 )

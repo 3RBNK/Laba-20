@@ -2,21 +2,14 @@
 #include <stdlib.h>
 #include <signal.h>
 
-#include "algorithms/task/7_binary_tree.h"
+
+#include "algorithms/task/4_get_domains.h"
 
 
 int main() {
-    vector nums = createVector(30);
+    const char* filename = "/home/lenovo/Документы/prjct/clion/Laba-20/file_for_task/task_4/task_4.txt";
 
-    int num[] = {3, 2, 1, 6, 0, 5};
-    int n = 6;
-
-    for (int i = 0; i < n; i++)
-        pushBack(&nums, num[i]);
-
-    vector result = generate_tree(&nums);
-
-    print_vector(&result);
+    get_domains(filename);
 
     return 0;
 }

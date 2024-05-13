@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/lenovo/Документы/prjct/clion/Laba-20/data_structures/matrix/matrix.c" "CMakeFiles/code.dir/data_structures/matrix/matrix.c.o" "gcc" "CMakeFiles/code.dir/data_structures/matrix/matrix.c.o.d"
+  "/home/lenovo/Документы/prjct/clion/Laba-20/data_structures/string/string_.c" "CMakeFiles/code.dir/data_structures/string/string_.c.o" "gcc" "CMakeFiles/code.dir/data_structures/string/string_.c.o.d"
   "/home/lenovo/Документы/prjct/clion/Laba-20/data_structures/vector/vector.c" "CMakeFiles/code.dir/data_structures/vector/vector.c.o" "gcc" "CMakeFiles/code.dir/data_structures/vector/vector.c.o.d"
   "/home/lenovo/Документы/prjct/clion/Laba-20/main.c" "CMakeFiles/code.dir/main.c.o" "gcc" "CMakeFiles/code.dir/main.c.o.d"
   )

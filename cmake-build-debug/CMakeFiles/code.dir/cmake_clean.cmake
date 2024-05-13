@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/code.dir/data_structures/matrix/matrix.c.o"
   "CMakeFiles/code.dir/data_structures/matrix/matrix.c.o.d"
+  "CMakeFiles/code.dir/data_structures/string/string_.c.o"
+  "CMakeFiles/code.dir/data_structures/string/string_.c.o.d"
   "CMakeFiles/code.dir/data_structures/vector/vector.c.o"
   "CMakeFiles/code.dir/data_structures/vector/vector.c.o.d"
   "CMakeFiles/code.dir/main.c.o"

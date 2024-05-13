@@ -153,6 +153,30 @@ data_structures/matrix/matrix.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/data_structures/matrix/matrix.c.s
 .PHONY : data_structures/matrix/matrix.c.s
 
+data_structures/string/string_.o: data_structures/string/string_.c.o
+.PHONY : data_structures/string/string_.o
+
+# target to build an object file
+data_structures/string/string_.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/data_structures/string/string_.c.o
+.PHONY : data_structures/string/string_.c.o
+
+data_structures/string/string_.i: data_structures/string/string_.c.i
+.PHONY : data_structures/string/string_.i
+
+# target to preprocess a source file
+data_structures/string/string_.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/data_structures/string/string_.c.i
+.PHONY : data_structures/string/string_.c.i
+
+data_structures/string/string_.s: data_structures/string/string_.c.s
+.PHONY : data_structures/string/string_.s
+
+# target to generate assembly for a file
+data_structures/string/string_.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/data_structures/string/string_.c.s
+.PHONY : data_structures/string/string_.c.s
+
 data_structures/vector/vector.o: data_structures/vector/vector.c.o
 .PHONY : data_structures/vector/vector.o
 
@@ -213,6 +237,9 @@ help:
 	@echo "... data_structures/matrix/matrix.o"
 	@echo "... data_structures/matrix/matrix.i"
 	@echo "... data_structures/matrix/matrix.s"
+	@echo "... data_structures/string/string_.o"
+	@echo "... data_structures/string/string_.i"
+	@echo "... data_structures/string/string_.s"
 	@echo "... data_structures/vector/vector.o"
 	@echo "... data_structures/vector/vector.i"
 	@echo "... data_structures/vector/vector.s"
