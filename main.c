@@ -1,15 +1,17 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <signal.h>
 
+#include "data_structures/string/string_.h"
 
-#include "algorithms/task/4_get_domains.h"
+#include "algorithms/task/11_auto_completion.h"
+
 
 
 int main() {
-    const char* filename = "/home/lenovo/Документы/prjct/clion/Laba-20/file_for_task/task_4/task_4.txt";
+    const char filename[] = "/home/lenovo/Документы/prjct/clion/Laba-20/file_for_task/task_11/task_11.txt";
 
-    get_domains(filename);
+
+    auto_completion(filename);
+
 
     return 0;
 }

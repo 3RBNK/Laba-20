@@ -6,6 +6,7 @@
 #define CODE_4_GET_DOMAINS_H
 
 #include <stdio.h>
+#include <stdlib.h>
 
 #include "../../data_structures/string/string_.h"
 
@@ -24,6 +25,17 @@ typedef struct domains {
     domain data[MAX_DOMAIN];
     size_t size;
 } domains;
+
+
+void free_domains(domains* ds) {
+    for (int i = 0; i < ds->size; i++) {
+        free(ds->data[i].name);
+        ds->data[i].amount = 0;
+    }
+
+    free(ds->data);
+    ds->size = 0;
+}
 
 
 int get_word_to_dot(char* begin_search, word_descriptor* word) {
@@ -123,16 +135,8 @@ void get_domains(const char* filename) {
     }
 
     fclose(file);
+
+    free_domains(&ds);
 }
 
 #endif //CODE_4_GET_DOMAINS_H
-
-
-
-
-
-
-
-
-
-

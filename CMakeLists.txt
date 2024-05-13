@@ -18,4 +18,5 @@ add_executable(code main.c
         algorithms/task/4_get_domains.h
         data_structures/string/string_.h
         data_structures/string/string_.c
+        algorithms/task/11_auto_completion.h
 )

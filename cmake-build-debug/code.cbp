@@ -76,6 +76,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/11_auto_completion.h">
+			<Option target="code"/>
+		</Unit>
 		<Unit filename="/home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/1_fill_matrix.h">
 			<Option target="code"/>
 		</Unit>

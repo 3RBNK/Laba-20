@@ -15,7 +15,7 @@
 
 #define MAX_WORD_SIZE 30
 #define MAX_N_WORDS_IN_STRING 100
-#define MAX_STRING_SIZE 200
+#define MAX_STRING_SIZE 4096
 
 extern char _string_buffer[MAX_STRING_SIZE + 1];
 
@@ -92,6 +92,9 @@ void assert_string(const char* expected, char* got,
 
 
 bool is_word_equal(word_descriptor word1, word_descriptor word2);
+
+
+bool is_sub_word(const word_descriptor word1, const word_descriptor word2);
 
 
 void word_descriptor_to_string(word_descriptor word, char* dest);
