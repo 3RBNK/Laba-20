@@ -6,6 +6,7 @@
 #define CODE_1_FILL_MATRIX_H
 
 #include <stdio.h>
+#include <assert.h>
 #include "../../data_structures/matrix/matrix.h"
 
 
@@ -39,6 +40,7 @@ void fill_matrix(const char* filename) {
 
     file = fopen(filename, "wb");
 
+    fwrite(&n, sizeof(int), 1, file);
     for (int i = 0; i < n; i++)
         for (int j = 0; j < n; j++)
             fwrite(&m.values[i][j], sizeof(int), 1, file);
@@ -46,6 +48,106 @@ void fill_matrix(const char* filename) {
 
     free_mem_matrix(&m);
     fclose(file);
+}
+
+
+void test_fill_matrix_1_empty_fail() {
+    const char filename[] = "/home/lenovo/Документы/prjct/clion/Laba-20/file_for_task/task_1/task_1_test_1.txt";
+
+    FILE* file = fopen(filename, "wb");
+
+    int n = 0;
+    fwrite(&n, sizeof(int), 1, file);
+
+    fclose(file);
+
+    fill_matrix(filename);
+
+
+    file = fopen(filename, "rb");
+
+    fread(&n, sizeof(int), 1, file);
+
+    fclose(file);
+
+    assert(n == 0);
+}
+
+
+void test_fill_matrix_2_unit_matrix() {
+    const char filename[] = "/home/lenovo/Документы/prjct/clion/Laba-20/file_for_task/task_1/task_1_test_2.txt";
+
+    FILE* file = fopen(filename, "wb");
+
+    int n = 1;
+    fwrite(&n, sizeof(int), 1, file);
+
+    coord c = {.row1=0, .col1=0, .row2=0, .col2=0};
+    fwrite(&c, sizeof(coord), 1, file);
+
+    fclose(file);
+
+    fill_matrix(filename);
+
+
+    file = fopen(filename, "rb");
+
+    fread(&n, sizeof(int), 1, file);
+
+    int x;
+    fread(&x, sizeof(int), 1, file);
+
+    fclose(file);
+
+    assert(n == 1);
+    assert(x == 1);
+}
+
+
+void test_fill_matrix_3_more_matrix_element() {
+    const char filename[] = "/home/lenovo/Документы/prjct/clion/Laba-20/file_for_task/task_1/task_1_test_3.txt";
+
+    FILE* file = fopen(filename, "wb");
+
+    int n = 3;
+    fwrite(&n, sizeof(int), 1, file);
+
+    coord c1 = {.row1=1, .col1=1, .row2=2, .col2=2};
+    coord c2 = {.row1=0, .col1=0, .row2=1, .col2=1};
+    fwrite(&c1, sizeof(coord), 1, file);
+    fwrite(&c2, sizeof(coord), 1, file);
+
+    fclose(file);
+
+    fill_matrix(filename);
+
+
+    file = fopen(filename, "rb");
+
+    fread(&n, sizeof(int), 1, file);
+
+    matrix m = get_mem_matrix(n, n);
+    for (int i = 0; i < n; i++)
+        for (int j = 0; j < n; j++)
+            fread(&m.values[i][j], sizeof(int), 1, file);
+
+    matrix check = create_matrix_from_array((int[]) {1, 1, 0,
+                                                        1, 2, 1,
+                                                        0, 1, 1}, 3, 3);
+
+    assert(n == 3);
+    assert(are_two_matrices_equal(&m, &check));
+
+    free_mem_matrix(&m);
+    free_mem_matrix(&check);
+    fclose(file);
+}
+
+
+void test_fill_matrix() {
+    test_fill_matrix_1_empty_fail();
+    test_fill_matrix_2_unit_matrix();
+    test_fill_matrix_3_more_matrix_element();
 }
 
 

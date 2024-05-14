@@ -1,16 +1,20 @@
 #include <stdio.h>
 
-#include "data_structures/string/string_.h"
+#include "algorithms/task/1_fill_matrix.h"
 
-#include "algorithms/task/11_auto_completion.h"
 
+void test() {
+    test_fill_matrix();
+}
 
 
 int main() {
-    const char filename[] = "/home/lenovo/Документы/prjct/clion/Laba-20/file_for_task/task_11/task_11.txt";
+    test();
 
-
-    auto_completion(filename);
+//    const char filename[] = "/home/lenovo/Документы/prjct/clion/Laba-20/file_for_task/task_11/task_11.txt";
+//
+//
+//    auto_completion(filename);
 
 
     return 0;
