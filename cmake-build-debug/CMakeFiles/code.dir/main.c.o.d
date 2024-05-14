@@ -54,4 +54,11 @@ CMakeFiles/code.dir/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/malloc.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/malloc.h \
+ /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/4_get_domains.h \
+ /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/../../data_structures/string/string_.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include/stdint.h \
+ /usr/include/stdint.h /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h /usr/include/ctype.h \
+ /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h

@@ -48,8 +48,6 @@ void median_filter(const char* filename) {
     fread(&n, sizeof(int), 1, file);
     fread(&filter, sizeof(int), 1, file);
 
-    // printf("n: %d, filter: %d\n", n, filter);
-
     filter /= 2;
 
     matrix m = get_mem_matrix(n, n);
@@ -92,6 +90,7 @@ void test_median_filter_1_empty_file() {
     fwrite(&filter, sizeof(int), 1, file);
 
     fclose(file);
+
 
     median_filter(filename);
 
@@ -160,7 +159,9 @@ void test_median_filter_3_small_matrix() {
 
     fclose(file);
 
+
     median_filter(filename);
+
 
     file = fopen(filename, "rb");
 
@@ -188,7 +189,7 @@ void test_median_filter_3_small_matrix() {
 }
 
 
-void test_median_filter_5_big_matrix() {
+void test_median_filter_4_average_matrix() {
     const char filename[] = "/home/lenovo/Документы/prjct/clion/Laba-20/file_for_task/task_3/task_3_test_4.txt";
 
     FILE* file = fopen(filename, "wb");
@@ -209,6 +210,7 @@ void test_median_filter_5_big_matrix() {
             fwrite(&mat.values[i][j], sizeof(int), 1, file);
 
     fclose(file);
+
 
     median_filter(filename);
 
@@ -241,8 +243,8 @@ void test_median_filter_5_big_matrix() {
 }
 
 
-void test_median_filter_4_average_matrix() {
-    const char filename[] = "/home/lenovo/Документы/prjct/clion/Laba-20/file_for_task/task_3/task_3_test_4.txt";
+void test_median_filter_5_big_matrix() {
+    const char filename[] = "/home/lenovo/Документы/prjct/clion/Laba-20/file_for_task/task_3/task_3_test_5.txt";
 
     FILE* file = fopen(filename, "wb");
 

@@ -7,6 +7,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <assert.h>
 
 #include "../../data_structures/string/string_.h"
 
@@ -25,17 +26,6 @@ typedef struct domains {
     domain data[MAX_DOMAIN];
     size_t size;
 } domains;
-
-
-void free_domains(domains* ds) {
-    for (int i = 0; i < ds->size; i++) {
-        free(ds->data[i].name);
-        ds->data[i].amount = 0;
-    }
-
-    free(ds->data);
-    ds->size = 0;
-}
 
 
 int get_word_to_dot(char* begin_search, word_descriptor* word) {
@@ -135,8 +125,100 @@ void get_domains(const char* filename) {
     }
 
     fclose(file);
+}
 
-    free_domains(&ds);
+
+void test_get_domains_1_empty_file() {
+    const char filename[] = "/home/lenovo/Документы/prjct/clion/Laba-20/file_for_task/task_4/task_4_test_1.txt";
+
+    FILE* file = fopen(filename, "w");
+    fclose(file);
+
+    get_domains(filename);
+
+
+    file = fopen(filename, "r");
+
+    char dest[100] = "";
+    fscanf(file, "%s", dest);
+
+    fclose(file);
+
+    assert(strcmp_(dest, "") == 0);
+}
+
+
+void test_get_domains_2_one_domain() {
+    const char filename[] = "/home/lenovo/Документы/prjct/clion/Laba-20/file_for_task/task_4/task_4_test_2.txt";
+
+    FILE* file = fopen(filename, "w");
+
+    char s[100] = "900 discuss.codeforces.com";
+    fprintf(file, "%s\n", s);
+
+    fclose(file);
+
+
+    get_domains(filename);
+
+
+    file = fopen(filename, "r");
+
+    char dest1[100] = "";
+    char dest2[100] = "";
+    char dest3[100] = "";
+    fgets(dest1, sizeof(dest1), file);
+    fgets(dest2, sizeof(dest2), file);
+    fgets(dest3, sizeof(dest3), file);
+
+    fclose(file);
+
+    assert(strcmp_(dest1, "900 discuss.codeforces.com\n") == 0);
+    assert(strcmp_(dest2, "900 codeforces.com\n") == 0);
+    assert(strcmp_(dest3, "900 com\n") == 0);
+}
+
+
+void test_get_domains_3_more_domain() {
+    const char filename[] = "/home/lenovo/Документы/prjct/clion/Laba-20/file_for_task/task_4/task_4_test_3.txt";
+
+    FILE* file = fopen(filename, "w");
+
+    char s1[100] = "900 discuss.codeforces.com";
+    char s2[100] = "69 mail.com";
+    fprintf(file, "%s\n", s1);
+    fprintf(file, "%s\n", s2);
+
+    fclose(file);
+
+
+    get_domains(filename);
+
+
+    file = fopen(filename, "r");
+
+    char dest1[100] = "";
+    char dest2[100] = "";
+    char dest3[100] = "";
+    char dest4[100] = "";
+    fgets(dest1, sizeof(dest1), file);
+    fgets(dest2, sizeof(dest2), file);
+    fgets(dest3, sizeof(dest3), file);
+    fgets(dest4, sizeof(dest4), file);
+
+    fclose(file);
+
+    assert(strcmp_(dest1, "900 discuss.codeforces.com\n") == 0);
+    assert(strcmp_(dest2, "900 codeforces.com\n") == 0);
+    assert(strcmp_(dest3, "969 com\n") == 0);
+    assert(strcmp_(dest4, "69 mail.com\n") == 0);
+}
+
+
+void test_get_domains() {
+    test_get_domains_1_empty_file();
+    test_get_domains_2_one_domain();
+    test_get_domains_3_more_domain();
 }
 
 #endif //CODE_4_GET_DOMAINS_H
