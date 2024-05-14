@@ -62,4 +62,6 @@ CMakeFiles/code.dir/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h /usr/include/ctype.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/5_get_submatrix.h
+ /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/5_get_submatrix.h \
+ /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/6_generate_nums.h \
+ /usr/include/string.h /usr/include/strings.h

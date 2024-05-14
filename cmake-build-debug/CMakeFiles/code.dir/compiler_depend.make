@@ -145,6 +145,7 @@ CMakeFiles/code.dir/main.c.o: /home/lenovo/Документы/prjct/clion/Laba-2
   /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/3_median_filter.h \
   /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/4_get_domains.h \
   /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/5_get_submatrix.h \
+  /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/6_generate_nums.h \
   /usr/include/alloca.h \
   /usr/include/assert.h \
   /usr/include/ctype.h \
@@ -156,6 +157,8 @@ CMakeFiles/code.dir/main.c.o: /home/lenovo/Документы/prjct/clion/Laba-2
   /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
   /usr/include/x86_64-linux-gnu/bits/endian.h \
@@ -212,6 +215,8 @@ CMakeFiles/code.dir/main.c.o: /home/lenovo/Документы/prjct/clion/Laba-2
 
 
 /usr/include/assert.h:
+
+/home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/6_generate_nums.h:
 
 /home/lenovo/Документы/prjct/clion/Laba-20/data_structures/string/string_.c:
 

@@ -33,7 +33,6 @@ void generate_nums(const char* filename) {
 
 
     while (i_ind != d_ind) {
-        printf("%d %d\n", i_ind, d_ind);
         if (*read_ptr == 'I') {
             *rec_ptr = (char) (num[i_ind] + ASCII_SHIFT);
             i_ind++;
@@ -55,5 +54,107 @@ void generate_nums(const char* filename) {
 
     fclose(file);
 }
+
+
+void test_generate_nums_1_empty_file() {
+    const char filename[] = "/home/lenovo/Документы/prjct/clion/Laba-20/file_for_task/task_6/task_6_test_1.txt";
+
+    FILE* file = fopen(filename, "w");
+    fclose(file);
+
+
+    generate_nums(filename);
+
+
+    file = fopen(filename, "r");
+
+    int nums;
+    fscanf(file, "%d", &nums);
+
+    fclose(file);
+
+    assert(nums == 1);
+}
+
+
+void test_generate_nums_2_unit_length() {
+    const char filename[] = "/home/lenovo/Документы/prjct/clion/Laba-20/file_for_task/task_6/task_6_test_2.txt";
+
+    FILE* file = fopen(filename, "w");
+
+    fprintf(file, "I");
+
+    fclose(file);
+
+
+    generate_nums(filename);
+
+
+    file = fopen(filename, "r");
+
+    int nums;
+    fscanf(file, "%d", &nums);
+
+    fclose(file);
+
+    assert(nums == 12);
+}
+
+
+void test_generate_nums_3_average_length() {
+    const char filename[] = "/home/lenovo/Документы/prjct/clion/Laba-20/file_for_task/task_6/task_6_test_3.txt";
+
+    FILE* file = fopen(filename, "w");
+
+    fprintf(file, "IIID");
+
+    fclose(file);
+
+
+    generate_nums(filename);
+
+
+    file = fopen(filename, "r");
+
+    int nums;
+    fscanf(file, "%d", &nums);
+
+    fclose(file);
+
+    assert(nums == 12354);
+}
+
+
+void test_generate_nums_4_max_length() {
+    const char filename[] = "/home/lenovo/Документы/prjct/clion/Laba-20/file_for_task/task_6/task_6_test_4.txt";
+
+    FILE* file = fopen(filename, "w");
+
+    fprintf(file, "IIIIIIII");
+
+    fclose(file);
+
+
+    generate_nums(filename);
+
+
+    file = fopen(filename, "r");
+
+    int nums;
+    fscanf(file, "%d", &nums);
+
+    fclose(file);
+
+    assert(nums == 123456789);
+}
+
+
+void test_generate_nums() {
+    test_generate_nums_1_empty_file();
+    test_generate_nums_2_unit_length();
+    test_generate_nums_3_average_length();
+    test_generate_nums_4_max_length();
+}
+
 
 #endif //CODE_6_GENERATE_NUMS_H
