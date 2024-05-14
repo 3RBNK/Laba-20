@@ -6,6 +6,7 @@
 #include "algorithms/task/6_generate_nums.h"
 #include "algorithms/task/7_binary_tree.h"
 #include "algorithms/task/8_rearrange_string.h"
+#include "algorithms/task/11_auto_completion.h"
 
 
 void test() {
@@ -17,6 +18,7 @@ void test() {
     test_generate_nums();
     test_generate_tree();
     test_rearrange_string();
+    test_auto_completion();
 }
 
 

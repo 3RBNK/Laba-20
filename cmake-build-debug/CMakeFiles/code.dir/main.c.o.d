@@ -67,4 +67,5 @@ CMakeFiles/code.dir/main.c.o: \
  /usr/include/string.h /usr/include/strings.h \
  /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/7_binary_tree.h \
  /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/../../data_structures/vector/vector.h \
- /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/8_rearrange_string.h
+ /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/8_rearrange_string.h \
+ /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/11_auto_completion.h

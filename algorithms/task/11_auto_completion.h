@@ -93,4 +93,109 @@ void auto_completion(const char* filename) {
     free_requests(&rs);
 }
 
+
+void test_auto_completion_1_empty_file() {
+    const char filename[] = "/home/lenovo/Документы/prjct/clion/Laba-20/file_for_task/task_11/task_11_test_1.txt";
+
+    FILE* file = fopen(filename, "w");
+
+    int n = 0;
+    int q = 0;
+    fprintf(file, "%d %d \n", n, q);
+
+    fclose(file);
+
+
+    auto_completion(filename);
+
+
+    file = fopen(filename, "r");
+
+    char res[100] = "";
+    fgets(res, 100, file);
+
+    fclose(file);
+
+    assert(strcmp_(res, "") == 0);
+}
+
+
+void test_auto_completion_2_zero_q() {
+    const char filename[] = "/home/lenovo/Документы/prjct/clion/Laba-20/file_for_task/task_11/task_11_test_2.txt";
+
+    FILE* file = fopen(filename, "w");
+
+    int n = 3;
+    int q = 0;
+    fprintf(file, "%d %d \n", n, q);
+    fprintf(file, "aa\n");
+    fprintf(file, "d\n");
+    fprintf(file, "mamama\n");
+
+    fclose(file);
+
+
+    auto_completion(filename);
+
+
+    file = fopen(filename, "r");
+
+    char res[100] = "";
+    fgets(res, 100, file);
+
+    fclose(file);
+
+    assert(strcmp_(res, "") == 0);
+}
+
+
+void test_auto_completion_3_different_element() {
+    const char filename[] = "/home/lenovo/Документы/prjct/clion/Laba-20/file_for_task/task_11/task_11_test_3.txt";
+
+    FILE* file = fopen(filename, "w");
+
+    int n = 10;
+    int q = 3;
+    fprintf(file, "%d %d \n", n, q);
+    fprintf(file, "aa    \n");
+    fprintf(file, "aaa   \n");
+    fprintf(file, "aab   \n");
+    fprintf(file, "ab    \n");
+    fprintf(file, "abc   \n");
+    fprintf(file, "ac    \n");
+    fprintf(file, "ba    \n");
+    fprintf(file, "daa   \n");
+    fprintf(file, "dab   \n");
+    fprintf(file, "dadba \n");
+    fprintf(file, "4 a   \n");
+    fprintf(file, "2 da   \n");
+    fprintf(file, "4 da \n");
+
+    fclose(file);
+
+
+    auto_completion(filename);
+
+
+    file = fopen(filename, "r");
+
+    int n1, n2, n3;
+    fscanf(file, "%d\n", &n1);
+    fscanf(file, "%d\n", &n2);
+    fscanf(file, "%d\n", &n3);
+
+    fclose(file);
+
+    assert(n1 == 4);
+    assert(n2 == 9);
+    assert(n3 == -1);
+}
+
+
+void test_auto_completion() {
+    test_auto_completion_1_empty_file();
+    test_auto_completion_2_zero_q();
+    test_auto_completion_3_different_element();
+}
+
 #endif //CODE_11_AUTO_COMPLETION_H

@@ -141,6 +141,7 @@ CMakeFiles/code.dir/main.c.o: /home/lenovo/Документы/prjct/clion/Laba-2
   /home/lenovo/Документы/prjct/clion/Laba-20/data_structures/matrix/matrix.h \
   /home/lenovo/Документы/prjct/clion/Laba-20/data_structures/string/string_.h \
   /home/lenovo/Документы/prjct/clion/Laba-20/data_structures/vector/vector.h \
+  /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/11_auto_completion.h \
   /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/1_fill_matrix.h \
   /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/2_game_life.h \
   /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/3_median_filter.h \
@@ -225,6 +226,8 @@ CMakeFiles/code.dir/main.c.o: /home/lenovo/Документы/prjct/clion/Laba-2
 
 /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/6_generate_nums.h:
 
+/home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/5_get_submatrix.h:
+
 /home/lenovo/Документы/prjct/clion/Laba-20/data_structures/string/string_.c:
 
 /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include/stdbool.h:
@@ -258,8 +261,6 @@ CMakeFiles/code.dir/main.c.o: /home/lenovo/Документы/prjct/clion/Laba-2
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/5_get_submatrix.h:
 
 /usr/include/memory.h:
 
@@ -378,5 +379,7 @@ CMakeFiles/code.dir/main.c.o: /home/lenovo/Документы/prjct/clion/Laba-2
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/11_auto_completion.h:
 
 /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/3_median_filter.h:
