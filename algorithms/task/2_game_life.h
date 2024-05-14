@@ -7,10 +7,11 @@
 
 #include <stdio.h>
 #include <stdbool.h>
+#include <assert.h>
 #include "../../data_structures/matrix/matrix.h"
 
 
-bool is_point_alive(matrix *m, int i, int j) {
+int is_point_alive(matrix *m, int i, int j) {
     bool is_alive = m->values[i][j];
 
     int left_i = i > 0 ? i - 1 : i;
@@ -19,57 +20,178 @@ bool is_point_alive(matrix *m, int i, int j) {
     int right_j = j < m->n_cols - 1 ? j + 1 : j;
 
     int amount_units = 0;
-
     for (int row_i = left_i; row_i <= right_i; row_i++)
         for (int col_j = left_j; col_j <= right_j; col_j++)
-            if (row_i != i && col_j != j && m->values[i][j])
+            if (m->values[row_i][col_j] && (row_i != i || col_j != j))
                 amount_units++;
 
-    if (is_alive && amount_units < 2) {
-        return false;
-    } else if (is_alive && (amount_units == 2 || amount_units == 3)) {
-        return true;
-    } else if (is_alive && amount_units > 3) {
-        return false;
-    } else if (!is_alive && amount_units == 3) {
-        return true;
-    }
+    if (is_alive && (amount_units < 2))
+        return 0;
+
+    if (is_alive && (amount_units == 2 || amount_units == 3))
+        return 1;
+
+    if (is_alive && amount_units > 3)
+        return 0;
+
+    if (!is_alive && amount_units == 3)
+        return 1;
+
+    return 0;
 }
 
 
 void game_life(const char* filename) {
     FILE* file = fopen(filename, "rb");
-    int m, n;
-    fread(&m, sizeof(int), 1, file);
+    int n, m;
     fread(&n, sizeof(int), 1, file);
+    fread(&m, sizeof(int), 1, file);
 
-    matrix mat = get_mem_matrix(m, n);
-
-    for (int i = 0; i < m; i++)
-        for (int j = 0; j < n; j++)
+    matrix mat = get_mem_matrix(n, m);
+    for (int i = 0; i < n; i++)
+        for (int j = 0; j < m; j++)
             fread(&mat.values[i][j], sizeof(int), 1, file);
 
-    matrix res_mat = get_mem_matrix(m, n);
-    for (int i = 0; i < m; i++)
-        for (int j = 0; j < n; j++)
-            res_mat.values[i][j] = (int) is_point_alive(&mat, i, j);
+    matrix res_mat = get_mem_matrix(n, m);
+    for (int i = 0; i < n; i++)
+        for (int j = 0; j < m; j++)
+            res_mat.values[i][j] = is_point_alive(&mat, i, j);
 
     fclose(file);
 
 
     file = fopen(filename, "wb");
 
-    fwrite(&m, sizeof(int), 1, file);
     fwrite(&n, sizeof(int), 1, file);
+    fwrite(&m, sizeof(int), 1, file);
 
-    for (int i = 0; i < m; i++)
-        for (int j = 0; j < n; j++)
+    for (int i = 0; i < n; i++)
+        for (int j = 0; j < m; j++)
             fwrite(&res_mat.values[i][j], sizeof(int), 1, file);
 
     free_mem_matrix(&mat);
     free_mem_matrix(&res_mat);
 
     fclose(file);
+}
+
+
+void test_game_life_1_empty_file() {
+    const char filename[] = "/home/lenovo/Документы/prjct/clion/Laba-20/file_for_task/task_2/task_2_test_1.txt";
+
+    FILE* file = fopen(filename, "wb");
+
+    int n = 0;
+    int m = 0;
+    fwrite(&n, sizeof(int), 1, file);
+    fwrite(&m, sizeof(int), 1, file);
+
+    fclose(file);
+
+
+    game_life(filename);
+
+
+    file = fopen(filename, "rb");
+
+    fread(&n, sizeof(int), 1, file);
+    fread(&m, sizeof(int), 1, file);
+
+    assert(n == 0);
+    assert(m == 0);
+
+    fclose(file);
+}
+
+
+void test_game_life_2_unit_file() {
+    const char filename[] = "/home/lenovo/Документы/prjct/clion/Laba-20/file_for_task/task_2/task_2_test_2.txt";
+
+    FILE* file = fopen(filename, "wb");
+
+    int n = 1;
+    int m = 1;
+    int x = 0;
+    fwrite(&n, sizeof(int), 1, file);
+    fwrite(&m, sizeof(int), 1, file);
+    fwrite(&x, sizeof(int), 1, file);
+
+    fclose(file);
+
+
+    game_life(filename);
+
+
+    file = fopen(filename, "rb");
+
+    fread(&n, sizeof(int), 1, file);
+    fread(&m, sizeof(int), 1, file);
+    fread(&x, sizeof(int), 1, file);
+
+    assert(n == 1);
+    assert(m == 1);
+    assert(x == 0);
+
+    fclose(file);
+}
+
+
+void test_game_life_3_more_elements() {
+    const char filename[] = "/home/lenovo/Документы/prjct/clion/Laba-20/file_for_task/task_2/task_2_test_3.txt";
+
+    FILE* file = fopen(filename, "wb");
+
+    int n = 4;
+    int m = 3;
+    fwrite(&n, sizeof(int), 1, file);
+    fwrite(&m, sizeof(int), 1, file);
+
+    matrix mat = create_matrix_from_array((int[]) {0, 1,  0,
+                                                      0, 0,  1,
+                                                      1, 1,  1,
+                                                      0, 0, 0}, n, m);
+
+    for (int i = 0; i < n; i++)
+        for (int j = 0; j < m; j++)
+            fwrite(&mat.values[i][j], sizeof(int), 1, file);
+
+    fclose(file);
+
+
+    game_life(filename);
+
+
+    file = fopen(filename, "rb");
+
+    fread(&n, sizeof(int), 1, file);
+    fread(&m, sizeof(int), 1, file);
+
+    matrix res = get_mem_matrix(n, m);
+    for (int i = 0; i < n; i++)
+        for (int j = 0; j < m; j++)
+            fread(&res.values[i][j], sizeof(int), 1, file);
+
+    matrix check = create_matrix_from_array((int[]) {0, 0, 0,
+                                                        1, 0, 1,
+                                                        0, 1, 1,
+                                                        0, 1, 0}, n, m);
+
+
+    assert(n == 4);
+    assert(m == 3);
+    assert(are_two_matrices_equal(&res, &check));
+
+    free_mem_matrix(&mat);
+    free_mem_matrix(&res);
+    free_mem_matrix(&check);
+    fclose(file);
+}
+
+
+void test_game_life() {
+    test_game_life_1_empty_file();
+    test_game_life_2_unit_file();
+    test_game_life_3_more_elements();
 }
 
 #endif //CODE_2_GAME_LIFE_H

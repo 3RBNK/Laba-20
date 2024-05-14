@@ -51,7 +51,7 @@ void fill_matrix(const char* filename) {
 }
 
 
-void test_fill_matrix_1_empty_fail() {
+void test_fill_matrix_1_empty_file() {
     const char filename[] = "/home/lenovo/Документы/prjct/clion/Laba-20/file_for_task/task_1/task_1_test_1.txt";
 
     FILE* file = fopen(filename, "wb");
@@ -145,7 +145,7 @@ void test_fill_matrix_3_more_matrix_element() {
 
 
 void test_fill_matrix() {
-    test_fill_matrix_1_empty_fail();
+    test_fill_matrix_1_empty_file();
     test_fill_matrix_2_unit_matrix();
     test_fill_matrix_3_more_matrix_element();
 }

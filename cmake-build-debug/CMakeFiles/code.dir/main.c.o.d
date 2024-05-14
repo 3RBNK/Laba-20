@@ -27,4 +27,5 @@ CMakeFiles/code.dir/main.c.o: \
  /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/1_fill_matrix.h \
  /usr/include/assert.h \
  /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/../../data_structures/matrix/matrix.h \
- /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include/stdbool.h
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include/stdbool.h \
+ /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/2_game_life.h

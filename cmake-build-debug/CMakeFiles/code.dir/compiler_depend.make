@@ -140,6 +140,7 @@ CMakeFiles/code.dir/data_structures/vector/vector.c.o: /home/lenovo/Докуме
 CMakeFiles/code.dir/main.c.o: /home/lenovo/Документы/prjct/clion/Laba-20/main.c \
   /home/lenovo/Документы/prjct/clion/Laba-20/data_structures/matrix/matrix.h \
   /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/1_fill_matrix.h \
+  /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/2_game_life.h \
   /usr/include/assert.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
@@ -183,6 +184,8 @@ CMakeFiles/code.dir/main.c.o: /home/lenovo/Документы/prjct/clion/Laba-2
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/2_game_life.h:
 
 /usr/include/alloca.h:
 
