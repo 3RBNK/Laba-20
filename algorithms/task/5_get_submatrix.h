@@ -7,6 +7,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <assert.h>
 
 #include "../../data_structures/matrix/matrix.h"
 
@@ -42,6 +43,48 @@ int get_submatrix(matrix mat) {
             res += sums[j];
     }
     return res;
+}
+
+
+void test_get_submatrix_1_empty_matrix() {
+    matrix m = create_matrix_from_array((int[]) {}, 0, 0);
+
+    int result = get_submatrix(m);
+
+    free_mem_matrix(&m);
+
+    assert(result == 0);
+}
+
+
+void test_get_submatrix_2_unit_matrix() {
+    matrix m = create_matrix_from_array((int[]) {1}, 1, 1);
+
+    int result = get_submatrix(m);
+
+    free_mem_matrix(&m);
+
+    assert(result == 1);
+}
+
+
+void test_get_submatrix_3_more_element() {
+    matrix m = create_matrix_from_array((int[]) {1, 0, 1,
+                                                    1, 1, 0,
+                                                    1, 1, 0}, 3, 3);
+
+    int result = get_submatrix(m);
+
+    free_mem_matrix(&m);
+
+    assert(result == 13);
+}
+
+
+void test_get_submatrix() {
+    test_get_submatrix_1_empty_matrix();
+    test_get_submatrix_2_unit_matrix();
+    test_get_submatrix_3_more_element();
 }
 
 #endif //CODE_5_GET_SUBMATRIX_H
