@@ -148,6 +148,7 @@ CMakeFiles/code.dir/main.c.o: /home/lenovo/Документы/prjct/clion/Laba-2
   /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/5_get_submatrix.h \
   /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/6_generate_nums.h \
   /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/7_binary_tree.h \
+  /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/8_rearrange_string.h \
   /usr/include/alloca.h \
   /usr/include/assert.h \
   /usr/include/ctype.h \
@@ -217,6 +218,8 @@ CMakeFiles/code.dir/main.c.o: /home/lenovo/Документы/prjct/clion/Laba-2
 
 
 /usr/include/assert.h:
+
+/home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/8_rearrange_string.h:
 
 /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/7_binary_tree.h:
 

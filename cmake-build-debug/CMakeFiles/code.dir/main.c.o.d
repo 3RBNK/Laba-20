@@ -1,6 +1,8 @@
 CMakeFiles/code.dir/main.c.o: \
  /home/lenovo/Документы/prjct/clion/Laba-20/main.c \
- /usr/include/stdc-predef.h /usr/include/stdio.h \
+ /usr/include/stdc-predef.h \
+ /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/1_fill_matrix.h \
+ /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -23,9 +25,7 @@ CMakeFiles/code.dir/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
- /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/1_fill_matrix.h \
- /usr/include/assert.h \
+ /usr/include/x86_64-linux-gnu/bits/floatn-common.h /usr/include/assert.h \
  /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/../../data_structures/matrix/matrix.h \
  /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include/stdbool.h \
  /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/2_game_life.h \
@@ -66,4 +66,5 @@ CMakeFiles/code.dir/main.c.o: \
  /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/6_generate_nums.h \
  /usr/include/string.h /usr/include/strings.h \
  /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/7_binary_tree.h \
- /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/../../data_structures/vector/vector.h
+ /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/../../data_structures/vector/vector.h \
+ /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/8_rearrange_string.h
