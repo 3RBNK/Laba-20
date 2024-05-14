@@ -140,12 +140,14 @@ CMakeFiles/code.dir/data_structures/vector/vector.c.o: /home/lenovo/Докуме
 CMakeFiles/code.dir/main.c.o: /home/lenovo/Документы/prjct/clion/Laba-20/main.c \
   /home/lenovo/Документы/prjct/clion/Laba-20/data_structures/matrix/matrix.h \
   /home/lenovo/Документы/prjct/clion/Laba-20/data_structures/string/string_.h \
+  /home/lenovo/Документы/prjct/clion/Laba-20/data_structures/vector/vector.h \
   /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/1_fill_matrix.h \
   /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/2_game_life.h \
   /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/3_median_filter.h \
   /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/4_get_domains.h \
   /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/5_get_submatrix.h \
   /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/6_generate_nums.h \
+  /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/7_binary_tree.h \
   /usr/include/alloca.h \
   /usr/include/assert.h \
   /usr/include/ctype.h \
@@ -215,6 +217,8 @@ CMakeFiles/code.dir/main.c.o: /home/lenovo/Документы/prjct/clion/Laba-2
 
 
 /usr/include/assert.h:
+
+/home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/7_binary_tree.h:
 
 /home/lenovo/Документы/prjct/clion/Laba-20/algorithms/task/6_generate_nums.h:
 

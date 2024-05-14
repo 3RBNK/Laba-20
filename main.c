@@ -6,6 +6,7 @@
 #include "algorithms/task/4_get_domains.h"
 #include "algorithms/task/5_get_submatrix.h"
 #include "algorithms/task/6_generate_nums.h"
+#include "algorithms/task/7_binary_tree.h"
 
 
 void test() {
@@ -15,6 +16,7 @@ void test() {
     test_get_domains();
     test_get_submatrix();
     test_generate_nums();
+    test_generate_tree();
 }
 
 

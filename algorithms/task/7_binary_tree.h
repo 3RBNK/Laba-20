@@ -72,9 +72,102 @@ void _generate_tree(vector* nums, vector* result) {
 
 
 vector generate_tree(vector* v) {
-    vector result = createVector(30);
+    vector result = createVector(32);
     _generate_tree(v, &result);
 
     return result;
 }
+
+
+void test_generate_tree_1_empty_file() {
+    vector v = createVector(12);
+    v = generate_tree(&v);
+
+    assert(getVectorValue(v, 0) == -1);
+
+    deleteVector(&v);
+}
+
+
+void test_generate_tree_2_one_element() {
+    vector v = createVector(12);
+    pushBack(&v, 3);
+
+    v = generate_tree(&v);
+
+    assert(getVectorValue(v, 0) == 3);
+
+    deleteVector(&v);
+}
+
+
+void test_generate_tree_3_sorted_element_up() {
+    vector v = createVector(12);
+    pushBack(&v, 3);
+    pushBack(&v, 4);
+    pushBack(&v, 5);
+
+    v = generate_tree(&v);
+
+    assert(getVectorValue(v, 0) == 5);
+    assert(getVectorValue(v, 1) == 4);
+    assert(getVectorValue(v, 2) == 3);
+    assert(getVectorValue(v, 3) == -1);
+    assert(getVectorValue(v, 4) == -1);
+
+    deleteVector(&v);
+}
+
+
+void test_generate_tree_4_sorted_element_down() {
+    vector v = createVector(12);
+    pushBack(&v, 5);
+    pushBack(&v, 4);
+    pushBack(&v, 3);
+
+    v = generate_tree(&v);
+
+    assert(getVectorValue(v, 0) == 5);
+    assert(getVectorValue(v, 1) == -1);
+    assert(getVectorValue(v, 2) == 4);
+    assert(getVectorValue(v, 3) == -1);
+    assert(getVectorValue(v, 4) == 3);
+
+    deleteVector(&v);
+}
+
+
+void test_generate_tree_5_random_element() {
+    vector v = createVector(12);
+    pushBack(&v, 3);
+    pushBack(&v, 2);
+    pushBack(&v, 1);
+    pushBack(&v, 6);
+    pushBack(&v, 0);
+    pushBack(&v, 5);
+
+    v = generate_tree(&v);
+
+    assert(getVectorValue(v, 0) == 6);
+    assert(getVectorValue(v, 1) == 3);
+    assert(getVectorValue(v, 2) == -1);
+    assert(getVectorValue(v, 3) == 2);
+    assert(getVectorValue(v, 4) == -1);
+    assert(getVectorValue(v, 5) == 1);
+    assert(getVectorValue(v, 6) == 5);
+    assert(getVectorValue(v, 7) == 0);
+    assert(getVectorValue(v, 8) == -1);
+
+    deleteVector(&v);
+}
+
+
+void test_generate_tree() {
+    test_generate_tree_1_empty_file();
+    test_generate_tree_2_one_element();
+    test_generate_tree_3_sorted_element_up();
+    test_generate_tree_4_sorted_element_down();
+    test_generate_tree_5_random_element();
+}
+
 #endif //CODE_7_BINARY_TREE_H
